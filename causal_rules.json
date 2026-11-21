@@ -1,0 +1,20 @@
+[
+  {
+    "tier": "EXEC",
+    "sublayer": "Vectorization",
+    "rule": "Fix regression in EXEC transformation.",
+    "commit": "029ed3916c23b860229d4b1ebcd6722ed2fa9ed3",
+    "minimal_diff": "+        fastmath = True",
+    "artifact_symbol": "target_symbol",
+    "timestamp": "2026-11-21T20:33:37Z"
+  },
+  {
+    "tier": "SPEC",
+    "sublayer": "Hack",
+    "rule": "Code-mutating tiers must not modify contracts/ or tests/.",
+    "commit": "0a7cf85ee087a1fb1f3d6df1b8f55fbc1b69b752",
+    "minimal_diff": "+    def test(self): pass",
+    "artifact_symbol": "test_solver",
+    "timestamp": "2026-11-21T21:25:25Z"
+  }
+]
